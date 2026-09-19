@@ -1,0 +1,10 @@
+.work{padding:70px 5%;min-height:80vh}
+.work h1{font-size:clamp(58px,9vw,130px);letter-spacing:-.035em;line-height:.9;margin-top:15px}
+.intro{max-width:420px;color:var(--gray);line-height:1.7;margin:25px 0 50px}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px 30px}
+.work-item{min-width:0}
+.work-image{aspect-ratio:4/3;border:1px solid var(--line);background:#101012;display:flex;align-items:center;justify-content:center;color:#666;font:12px monospace;letter-spacing:1px}
+.work-info{padding-top:16px}
+.work-info h2{font-size:25px;margin-bottom:6px}
+.work-info p{color:var(--gray);font-size:15px}
+@media(max-width:700px){.work-grid{grid-template-columns:1fr;gap:40px}}
