@@ -1,0 +1,31 @@
+
+.resume{padding:70px 5%;min-height:80vh}
+.resume>h1{font-size:clamp(58px,9vw,130px);letter-spacing:-.035em;line-height:.9;margin:15px 0 55px}
+.resume-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,.65fr);gap:75px}
+.resume-section{margin-bottom:55px}
+.resume-grid h2{font:13px monospace;color:var(--purple);letter-spacing:1.5px;margin-bottom:18px}
+.resume-main article{padding:25px 0;border-top:1px solid var(--line)}
+.resume-main h3{font-size:24px;margin-bottom:8px}
+.resume-title{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+.resume-title span{color:var(--gray);font-size:15px}
+.resume-main p{color:var(--gray);line-height:1.75;max-width:780px;margin-top:10px}
+.resume-main .degree{color:var(--white);font-weight:600}
+.side-section{margin-bottom:42px}
+.side-section p{color:var(--gray);line-height:1.9}
+@media(max-width:800px){.resume-grid{grid-template-columns:1fr;gap:30px}.resume-title{display:block}.resume-title span{display:block;margin-top:5px}}
+.resume>h1{letter-spacing:-.035em}
+.resume-title{
+  display:block;
+  margin-bottom:14px;
+}
+.resume-title h3{margin:0 0 4px}
+.resume-title span{
+  display:block;
+  color:var(--gray);
+  font-size:15px;
+  line-height:1.35;
+}
+@media(max-width:760px){
+  .resume{padding-top:45px}
+  .resume>h1{letter-spacing:-.025em}
+}

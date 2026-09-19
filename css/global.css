@@ -1,0 +1,44 @@
+:root{--bg:#08080a;--white:#f1f1ef;--gray:#96969f;--line:#29292f;--purple:#7657ff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{position:relative;isolation:isolate;overflow-x:hidden;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
+body::before{content:"";position:fixed;inset:-100px;z-index:-4;pointer-events:none;opacity:.55;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(rgba(118,87,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(118,87,255,.045) 1px,transparent 1px);background-size:72px 72px,72px 72px,288px 288px,288px 288px;transform:translate3d(var(--grid-x,0),var(--grid-y,0),0) rotate(.15deg);will-change:transform}
+body::after{content:"";position:fixed;left:0;right:0;top:-2px;height:1px;z-index:-2;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(118,87,255,.5),transparent);opacity:.55;animation:axisScan 12s linear infinite}
+@keyframes axisScan{from{transform:translateY(0)}to{transform:translateY(100vh)}}
+header,main,footer{position:relative;z-index:1}
+header{z-index:100;min-height:76px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-size:30px;font-weight:900;letter-spacing:-1.5px;color:var(--white);text-decoration:none}
+.logo span,.purple{color:var(--purple)}
+.logo sup{font-size:9px}
+nav{display:flex;gap:28px;z-index:110}
+nav a{position:relative;z-index:111;color:var(--gray);font:13px monospace;letter-spacing:1.5px;text-decoration:none;pointer-events:auto}
+nav a:hover{color:var(--white)}
+.label,small{font:13px monospace;letter-spacing:1.5px;color:var(--gray)}
+.button{border:1px solid #555;padding:16px 24px;color:var(--white);text-decoration:none;font:13px monospace}
+.button:hover{border-color:var(--purple)}
+h1{font-kerning:normal;text-rendering:optimizeLegibility}
+footer{padding:24px 5%;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#777;font:11px monospace;letter-spacing:1px}
+.cursor-glow{position:fixed;width:650px;height:650px;left:0;top:0;z-index:-3;pointer-events:none;border-radius:50%;opacity:.22;background:radial-gradient(circle,rgba(118,87,255,.5) 0%,rgba(118,87,255,.15) 28%,rgba(118,87,255,0) 68%);transform:translate3d(-1000px,-1000px,0);will-change:transform}
+.axis-crosshair{position:fixed;width:46px;height:46px;left:0;top:0;z-index:-1;opacity:.36;pointer-events:none;transform:translate3d(-100px,-100px,0)}
+.axis-crosshair::before,.axis-crosshair::after{content:"";position:absolute;background:rgba(118,87,255,.8)}
+.axis-crosshair::before{width:46px;height:1px;top:22px;left:0}
+.axis-crosshair::after{width:1px;height:46px;left:22px;top:0}
+.nav-toggle{display:none;width:44px;height:44px;border:1px solid var(--line);background:rgba(8,8,10,.92);color:var(--white);cursor:pointer;align-items:center;justify-content:center;padding:0;position:relative;z-index:120}
+.nav-toggle span,.nav-toggle::before,.nav-toggle::after{content:"";display:block;width:19px;height:1px;background:currentColor;position:absolute;transition:transform .25s ease,opacity .2s ease}
+.nav-toggle::before{transform:translateY(-6px)}
+.nav-toggle::after{transform:translateY(6px)}
+@media(max-width:760px){
+header{min-height:70px;padding:0 5%;flex-wrap:wrap}
+.logo{font-size:26px}
+.nav-toggle{display:flex;flex:0 0 44px}
+header nav{position:static;order:3;flex-basis:100%;width:100%;display:flex;flex-direction:column;align-items:stretch;gap:0;max-height:0;overflow:hidden;padding:0;opacity:0;visibility:hidden;pointer-events:none;background:rgba(8,8,10,.97);border-bottom:0;transition:max-height .32s ease,opacity .22s ease,padding .32s ease,visibility .22s ease}
+header nav a{display:block;width:100%;padding:14px 0;font-size:14px;border-bottom:1px solid rgba(255,255,255,.07)}
+header nav a:last-child{border-bottom:0}
+body.nav-open header nav{max-height:360px;padding:8px 0 16px;opacity:1;visibility:visible;pointer-events:auto;border-bottom:1px solid var(--line)}
+body.nav-open .nav-toggle span{opacity:0}
+body.nav-open .nav-toggle::before{transform:rotate(45deg)}
+body.nav-open .nav-toggle::after{transform:rotate(-45deg)}
+footer{flex-direction:column}
+}
+@media(hover:none),(pointer:coarse){.cursor-glow,.axis-crosshair{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}body::before{transform:none}body::after{display:none;animation:none}.cursor-glow,.axis-crosshair{display:none}}
