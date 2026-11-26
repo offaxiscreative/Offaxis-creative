@@ -383,3 +383,30 @@
 .wf-phones .wf-art{max-width:170px}
 @media(max-width:1000px){.wf-phones{grid-template-columns:1fr}}
 @media(max-width:520px){.wf-phones .wf{grid-template-columns:110px minmax(0,1fr);gap:18px;padding:26px 20px;align-items:start}}
+
+/* ---- uniform wireframe sizing: phones 150px wide everywhere, desktop screens 420px ---- */
+.wf-phones{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.wf-phones .wf{grid-template-columns:1fr;align-items:start;align-content:start;gap:22px;padding:30px 22px 26px}
+.wf-phones .wf-art{width:150px;max-width:150px;justify-self:center}
+.wf-wide .wf{grid-template-columns:420px minmax(0,1fr);gap:40px;padding:30px 34px}
+.wf-wide .wf-art{width:420px;max-width:100%}
+@media(max-width:1000px){.wf-phones{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:860px){.wf-wide .wf{grid-template-columns:1fr;gap:22px}.wf-wide .wf-art{width:100%;max-width:420px}}
+@media(max-width:560px){.wf-phones{grid-template-columns:1fr}.wf-phones .wf{grid-template-columns:110px minmax(0,1fr);gap:18px;padding:26px 20px}.wf-phones .wf-art{width:110px}}
+/* lifeline process pairs as HUD cards, same rhythm as the other wireframes */
+.case .ll-process{gap:18px}
+.case .ll-pair{--acc:#9b85ff;--br:14px;padding:30px 34px;gap:32px;
+  background:
+    linear-gradient(var(--acc),var(--acc)) left 12px top 12px/var(--br) 1.5px no-repeat,
+    linear-gradient(var(--acc),var(--acc)) left 12px top 12px/1.5px var(--br) no-repeat,
+    linear-gradient(var(--acc),var(--acc)) right 12px bottom 12px/var(--br) 1.5px no-repeat,
+    linear-gradient(var(--acc),var(--acc)) right 12px bottom 12px/1.5px var(--br) no-repeat,
+    linear-gradient(180deg,rgba(255,255,255,.035),transparent 40%),rgba(20,20,26,.5)}
+.case .ll-pair:nth-child(2n){--acc:#5fe6ff}.case .ll-pair:nth-child(3n){--acc:#ff6fb0}
+.case .ll-pair-text .label{color:var(--acc)}
+@media(max-width:560px){.case .ll-pair{padding:26px 18px}}
+@media(max-width:560px){.case .ll-pair .ll-screen{--s:.32}.case .ll-pair .pair-screens{gap:6px;justify-content:center}}
+@media(max-width:360px){.case .ll-pair .ll-screen{--s:.28}}
+/* black & white sketches */
+.wf-notes li::before{background:#fff;color:#111}
+.wf-art svg{filter:drop-shadow(0 10px 24px rgba(0,0,0,.45))}

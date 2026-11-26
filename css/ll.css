@@ -42,7 +42,7 @@
 /* process */
 .ll-process{display:grid;gap:40px;margin-top:48px}
 .ll-pair{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:28px;align-items:center}
-.ll-pair .ll-screen{--s:.46}
+.ll-pair .ll-screen{--s:.373}
 .ll-pair .arrow{color:var(--dim);font-size:24px}
 .ll-pair-text .label{color:var(--purple-text)}
 .ll-pair-text h3{font-size:22px;margin:8px 0}
@@ -65,7 +65,7 @@
   .ll-gallery .ll-screen{--s:.52}
   .ll-gallery figcaption{text-align:left;max-width:210px}
   .ll-pair{grid-template-columns:1fr}
-  .ll-pair .ll-screen{--s:.4}
+  .ll-pair .ll-screen{--s:.373}
   .ll-palette{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 @media(max-width:520px){.ll-hero .ll-screen.side{display:none}}
