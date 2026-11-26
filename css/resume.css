@@ -42,3 +42,9 @@
 .resume-link{color:var(--white);text-decoration:underline;text-decoration-color:var(--purple);text-underline-offset:4px;display:inline-block;min-height:44px;line-height:44px}
 .resume-link:hover{color:var(--purple-text)}
 
+.resume-status{display:flex;align-items:center;gap:10px;margin:0 0 22px;font:13px monospace;letter-spacing:1px;color:#5fe6ff}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#5fe6ff;box-shadow:0 0 10px rgba(95,230,255,.7);flex:none}
+.resume-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-bottom:55px}
+.resume-actions .icon{width:16px;height:16px}
+.resume-actions .button-primary{background:var(--purple-fill);border-color:var(--purple-fill)}
+.resume-status{align-items:flex-start}.status-dot{margin-top:4px}
