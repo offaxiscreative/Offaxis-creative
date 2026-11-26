@@ -4,56 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Work | OFF/AXIS</title>
+  <meta name="description" content="UX, visual design and game UI case studies by Kevin Cornejo (OFF/AXIS).">
+  <meta property="og:title" content="Work | OFF/AXIS">
+  <meta property="og:description" content="UX, visual design and game UI case studies by Kevin Cornejo.">
+  <meta property="og:image" content="images/bubble-keyboard-1600.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/work.css">
 </head>
 <body>
+<a class="skip-link" href="#main">SKIP TO CONTENT</a>
 <header>
-  <a class="logo" href="index.html">OFF<span>/</span>AXIS<sup>™</sup></a>
-  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span></button>
-<nav>
+  <a class="logo" href="index.html" aria-label="OFF/AXIS home">OFF<span>/</span>AXIS</a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+  <nav id="site-nav" aria-label="Main">
     <a href="index.html">HOME</a>
-    <a href="work.html">WORK</a>
+    <a href="work.html" aria-current="page">WORK</a>
     <a href="index.html#about">ABOUT</a>
     <a href="resume.html">RESUME</a>
     <a href="contact.html">CONTACT</a>
   </nav>
 </header>
-<main>
-<section class="work">
+<main id="main">
+<section class="work page">
+  <div class="ht-slot sl-archive" aria-hidden="true"><canvas data-scene="archive" data-anim="1"></canvas></div>
   <p class="label purple">002 / WORK</p>
-  <h1>DIGITAL ARCHIVE.</h1>
-  <p class="intro">A collection of design and photography work.</p>
+  <h1 class="page-title">DIGITAL ARCHIVE.</h1>
+  <p class="intro">Case studies in interaction and visual design. Select a project to see more.</p>
 
   <div class="work-grid">
-    <article class="work-item">
-      <div class="work-image"><img src="images/bmwposter1.jpg" alt="BMW advertising poster displayed in an urban setting"></div>
-      <div class="work-info"><h2>BMW Campaign Poster</h2><p>Visual Design</p></div>
+
+    <article class="work-item" id="bubble-keyboard">
+      <a class="work-open" href="bubble-keyboard.html">
+        <span class="work-image">
+          <img fetchpriority="high" src="images/bubble-keyboard-800.webp" srcset="images/bubble-keyboard-800.webp 800w, images/bubble-keyboard-1600.webp 1600w" sizes="(max-width:700px) 90vw, 45vw" width="800" height="533" alt="An Apple Watch on a wrist over dark wood, showing the Bubble Keyboard: a large purple N bubble with smaller A, O, Y and I bubbles">
+        </span>
+        <span class="work-info">
+          <span class="work-meta">01 — UX / CONCEPTUAL REDESIGN</span>
+          <span class="work-title">Predictive Bubble Keyboard</span>
+          <span class="work-type">Conceptual redesign of the Apple Watch keyboard</span>
+          <span class="work-cta">READ CASE STUDY <svg class="icon icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </span>
+      </a>
     </article>
 
-    <article class="work-item">
-      <div class="work-image"><img src="images/G80_mockup.png" alt="MotorTrend BMW G80 M3 editorial magazine design"></div>
-      <div class="work-info"><h2>MotorTrend Editorial</h2><p>Visual Design</p></div>
+    <article class="work-item" id="campusconnect">
+      <a class="work-open" href="campusconnect.html">
+        <span class="work-image">
+          <img src="images/campusconnect-800.webp" srcset="images/campusconnect-800.webp 800w, images/campusconnect-1600.webp 1600w" sizes="(max-width:700px) 90vw, 45vw" width="800" height="533" alt="A hand holding an iPhone showing the CampusConnect playfield: eight round service targets, Grades and Graduation lit yellow, flippers and a yellow ball">
+        </span>
+        <span class="work-info">
+          <span class="work-meta">02 — UX / RADICAL DESIGN</span>
+          <span class="work-title">CampusConnect</span>
+          <span class="work-type">Radical redesign of campus app navigation</span>
+          <span class="work-cta">READ CASE STUDY <svg class="icon icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </span>
+      </a>
     </article>
 
-    <article class="work-item">
-      <div class="work-image"><img src="images/carphoto1.jpg" alt="BMW E92 M3 automotive photography collection"></div>
-      <div class="work-info"><h2>BMW E92 M3</h2><p>Photography</p></div>
+    <article class="work-item" id="lifeline">
+      <a class="work-open" href="lifeline.html">
+        <span class="work-image">
+          <img src="images/lifeline-800.webp" srcset="images/lifeline-800.webp 800w, images/lifeline-1600.webp 1600w" sizes="(max-width:700px) 90vw, 45vw" width="800" height="533" alt="A black-gloved hand holding a red iPhone showing the Lifeline dashboard: ID #9848959, 742 REP, compliant, one task overdue" loading="lazy">
+        </span>
+        <span class="work-info">
+          <span class="work-meta">03 — UX / SPECULATIVE</span>
+          <span class="work-title">Lifeline</span>
+          <span class="work-type">Speculative app about surveillance and control</span>
+          <span class="work-cta">READ CASE STUDY <svg class="icon icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </span>
+      </a>
     </article>
 
-    <article class="work-item">
-      <div class="work-image"><img src="images/textmock.jpg" alt="Apple Watch messaging keyboard interface concept"></div>
-      <div class="work-info"><h2>Apple Watch Keyboard</h2><p>UX / Visual Design</p></div>
+    <article class="work-item" id="mw4-menu">
+      <a class="work-open" href="mw4-menu.html">
+        <span class="work-image">
+          <img src="images/mw4-800.webp" srcset="images/mw4-800.webp 800w, images/mw4-1600.webp 1600w" sizes="(max-width:700px) 90vw, 45vw" width="800" height="533" alt="A player at a gaming desk with the redesigned MW4 home screen on the monitor" loading="lazy">
+        </span>
+        <span class="work-info">
+          <span class="work-meta">04 — UX / FAN-CONCEPT REDESIGN</span>
+          <span class="work-title">MW4 Menu Redesign</span>
+          <span class="work-type">Fan redesign of Call of Duty’s PC menus</span>
+          <span class="work-cta">READ CASE STUDY <svg class="icon icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </span>
+      </a>
     </article>
+
   </div>
 </section>
 </main>
+
+<dialog class="project-dialog" aria-labelledby="dialog-title">
+  <div class="dialog-bar">
+    <p class="label">OFF<span class="purple">/</span>AXIS — PROJECT</p>
+    <button class="dialog-close" type="button" aria-label="Close project">CLOSE <svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="dialog-body"></div>
+</dialog>
+
+<div class="ht-band"><canvas aria-hidden="true" data-scene="station" data-anim="1" data-step="4" data-stop="Work"></canvas></div>
 <footer>
-  <p>OFF/AXIS™ — KEVIN CORNEJO&copy;</p>
+  <p>OFF/AXIS — KEVIN CORNEJO © 2026</p>
   <p>OUTSIDE THE EXPECTED.</p>
-  <p>NEW YORK / 2026</p>
+  <p><a href="privacy.html">PRIVACY</a> / NEW YORK</p>
 </footer>
   <script src="js/background.js"></script>
   <script src="js/navigation.js"></script>
+  <script src="js/nyc.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/subway.js"></script>
+  <script src="js/eggs.js"></script>
+  <script src="js/vhs.js"></script>
+  <script src="js/work.js"></script>
 </body>
 </html>

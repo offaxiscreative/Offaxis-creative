@@ -1,0 +1,10 @@
+.legal-date{margin:22px 0 50px;color:var(--gray);font:12px monospace;letter-spacing:1.3px}
+.legal-body{max-width:720px;padding-top:30px;border-top:1px solid var(--line)}
+.legal-body h2{margin:38px 0 12px;font-size:22px}
+.legal-body h2:first-child{margin-top:0}
+.legal-body p{color:var(--gray);font-size:16px;line-height:1.7}
+.legal-body a{color:var(--white);text-underline-offset:3px;text-decoration-color:var(--purple)}
+.lost{min-height:calc(100vh - 150px);display:flex;flex-direction:column;justify-content:center}
+.lost .page-title span{color:var(--purple)}
+.lost p:not(.label){max-width:440px;margin:28px 0 40px;color:var(--gray);line-height:1.7}
+.lost-actions{display:flex;flex-wrap:wrap;gap:16px}

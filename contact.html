@@ -4,69 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | OFF/AXIS</title>
+  <meta name="description" content="Freelance, collaboration or opportunities: get in touch with Kevin Cornejo (OFF/AXIS).">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+<a class="skip-link" href="#main">SKIP TO CONTENT</a>
 <header>
-  <a class="logo" href="index.html">OFF<span>/</span>AXIS<sup>™</sup></a>
-  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span></button>
-<nav>
+  <a class="logo" href="index.html" aria-label="OFF/AXIS home">OFF<span>/</span>AXIS</a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+  <nav id="site-nav" aria-label="Main">
     <a href="index.html">HOME</a>
     <a href="work.html">WORK</a>
     <a href="index.html#about">ABOUT</a>
     <a href="resume.html">RESUME</a>
-    <a href="contact.html">CONTACT</a>
+    <a href="contact.html" aria-current="page">CONTACT</a>
   </nav>
 </header>
-<main>
+<main id="main">
 <section class="contact">
+  <div class="ht-slot sl-signal" aria-hidden="true"><canvas data-scene="signal" data-anim="1"></canvas></div>
   <p class="label purple">004 / CONTACT</p>
   <p class="sub">Freelance / collaboration / opportunities</p>
   <h1>HAVE AN IDEA?<br><span>LET'S TALK.</span></h1>
 
   <div class="contact-layout">
-    <form class="contact-form" action="https://formspree.io/f/xkjggajb" method="POST">
-      <div class="form-row">
-        <div class="field">
-          <label for="name">NAME</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required>
+    <div class="contact-main">
+      <form class="contact-form" action="https://formspree.io/f/xkjggajb" method="POST" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">NAME</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required aria-describedby="name-error">
+            <p class="field-error" id="name-error" hidden>Add your name so I know who to reply to.</p>
+          </div>
+          <div class="field">
+            <label for="email">EMAIL</label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required aria-describedby="email-error">
+            <p class="field-error" id="email-error" hidden>Enter an email like name@example.com.</p>
+          </div>
         </div>
+
         <div class="field">
-          <label for="email">EMAIL</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <label for="subject">SUBJECT <span class="optional">(OPTIONAL)</span></label>
+          <input id="subject" name="subject" type="text" placeholder="What are you reaching out about?">
         </div>
-      </div>
 
-      <div class="field">
-        <label for="subject">SUBJECT</label>
-        <input id="subject" name="subject" type="text" placeholder="What are you reaching out about?" required>
-      </div>
+        <div class="field">
+          <label for="message">MESSAGE</label>
+          <textarea id="message" name="message" rows="7" placeholder="Tell me about your idea or project." required aria-describedby="message-error"></textarea>
+          <p class="field-error" id="message-error" hidden>Write a short message first.</p>
+        </div>
 
-      <div class="field">
-        <label for="message">MESSAGE</label>
-        <textarea id="message" name="message" rows="7" placeholder="Tell me about your idea or project." required></textarea>
-      </div>
+        <!-- spam trap: real people never see or fill this -->
+        <div class="hp" aria-hidden="true">
+          <label for="company-website">Leave this empty</label>
+          <input id="company-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
 
-      <button class="send-button" type="submit">SEND MESSAGE</button>
-    </form>
+        <div class="form-actions">
+          <button class="send-button" type="submit"><span class="send-label">SEND MESSAGE</span><svg class="icon icon-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="M21 3 3 10.5l7 3L13 21z"/><path d="M10 13.5 21 3"/></svg></button>
+          <p class="consent">I’ll only use your details to reply to you. See the <a href="privacy.html">privacy policy</a>.</p>
+        </div>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="form-success" hidden tabindex="-1">
+        <p class="label purple">MESSAGE SENT</p>
+        <h2>THANKS — TALK SOON.</h2>
+        <p>Your message is in. I’ll reply to <strong class="success-email"></strong> as soon as I can.</p>
+        <a class="text-link" href="work.html">BACK TO THE WORK <svg class="icon icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
 
     <aside class="contact-social">
       <small>PROFESSIONAL</small>
       <h2>LINKEDIN</h2>
-      <p>Connect with me!&nbsp;</p>
-      <a class="linkedin-link" href="https://www.linkedin.com/in/offaxiscreative" target="_blank" rel="noopener noreferrer">LINKEDIN PROFILE</a>
+      <p>Work history and background.</p>
+      <a class="linkedin-link" href="https://www.linkedin.com/in/offaxiscreative" target="_blank" rel="noopener noreferrer">LINKEDIN PROFILE <svg class="icon icon-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="sr-only">(opens in a new tab)</span></a>
+      <div class="ht-slot ht-flow" aria-hidden="true"><canvas data-scene="crossing" data-anim="1"></canvas></div>
     </aside>
   </div>
 </section>
 </main>
 
+<div class="ht-band"><canvas aria-hidden="true" data-scene="station" data-anim="1" data-step="4" data-stop="Contact"></canvas></div>
 <footer>
-  <p>OFF/AXIS™ — KEVIN CORNEJO&copy;</p>
+  <p>OFF/AXIS — KEVIN CORNEJO © 2026</p>
   <p>OUTSIDE THE EXPECTED.</p>
-  <p>NEW YORK / 2026</p>
+  <p><a href="privacy.html">PRIVACY</a> / NEW YORK</p>
 </footer>
   <script src="js/background.js"></script>
   <script src="js/navigation.js"></script>
+  <script src="js/nyc.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/subway.js"></script>
+  <script src="js/eggs.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>

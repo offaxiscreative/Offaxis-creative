@@ -4,25 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume | OFF/AXIS</title>
+  <meta name="description" content="Resume of Kevin Cornejo: experience, education, creative and professional skills, and software.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/resume.css">
 </head>
 <body>
+<a class="skip-link" href="#main">SKIP TO CONTENT</a>
 <header>
-  <a class="logo" href="index.html">OFF<span>/</span>AXIS<sup>™</sup></a>
-  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span></button>
-<nav>
+  <a class="logo" href="index.html" aria-label="OFF/AXIS home">OFF<span>/</span>AXIS</a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+  <nav id="site-nav" aria-label="Main">
     <a href="index.html">HOME</a>
     <a href="work.html">WORK</a>
     <a href="index.html#about">ABOUT</a>
-    <a href="resume.html">RESUME</a>
+    <a href="resume.html" aria-current="page">RESUME</a>
     <a href="contact.html">CONTACT</a>
   </nav>
 </header>
-<main>
+<main id="main">
 <section class="resume">
+  <div class="ht-slot sl-resume" aria-hidden="true"><canvas data-scene="train" data-anim="1"></canvas></div>
   <p class="label purple">003 / RESUME</p>
   <h1>RESUME.</h1>
+  <p class="resume-summary">Interaction design student at Farmingdale State College with a graphic design background and seven years managing an administrative team. I design and prototype in Figma and build in HTML and CSS.</p>
+  <p class="resume-cta"><a class="text-link" href="contact.html">OPEN TO FREELANCE &amp; COLLABORATION — GET IN TOUCH <svg class="icon icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
 
   <div class="resume-grid">
     <div class="resume-main">
@@ -31,50 +37,90 @@
         <article>
           <div class="resume-title">
             <h3>Print Lead</h3>
-            <span>Staples</span>
+            <span>Staples · Jul 2025 – Jan 2026</span>
           </div>
-          <p>Led day-to-day print production while working directly with customers to turn ideas and requests into finished printed materials. Managed multiple projects from file preparation through final production while maintaining quality, accuracy, and deadlines.</p>
-          <p>Worked across printing, binding, laminating, finishing, and other print services. Assisted customers with file setup, layouts, sizing, print specifications, and production decisions.</p>
-          <p>Organized workflow, prioritized jobs, solved production issues, maintained equipment and supplies, and supported team members in completing projects efficiently.</p>
+          <ul>
+            <li>Owned client relationships for the print center, acting as the go-to contact for small-business customers.</li>
+            <li>Helped local businesses scale their printing as they grew, pitching ad and marketing pieces that fit their goals and budget.</li>
+            <li>Put a graphic design background to work at the counter, walking customers through file setup and print options, and repairing layout, sizing and resolution issues so every job printed cleanly.</li>
+            <li>Led daily print production: prioritized the job queue, assigned work across the team and kept orders on schedule.</li>
+            <li>Managed paper and supply inventory, restocking ahead of the busiest hours so production never stalled.</li>
+            <li>Coached team members on design basics and complex jobs, and checked finished work for quality before handoff.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="resume-title">
+            <h3>Vice President</h3>
+            <span>New Solution Home Care · 2018 – 2025</span>
+          </div>
+          <ul>
+            <li>Ran day-to-day operations for the office, leading an administrative staff of about 15 and setting each day’s priorities.</li>
+            <li>Kept new-client onboarding moving: tracked outreach on each incoming case and made sure paperwork was complete before deadlines.</li>
+            <li>Grew the agency’s referral network by partnering with insurance providers and clinic physicians to promote its services.</li>
+            <li>Served as the main contact for clients and vendors, resolving issues as they came up.</li>
+            <li>Handled HR support, office policies and administrative workflows.</li>
+          </ul>
         </article>
       </section>
 
       <section class="resume-section">
         <h2>EDUCATION</h2>
         <article>
-          <h3>Farmingdale State College</h3>
-          <p class="degree">Bachelor’s — Interaction Design / UX</p>
-          <p>Currently pursuing bachelor’s degree</p>
+          <div class="resume-title">
+            <h3>Farmingdale State College</h3>
+            <span>B.S. Interaction Design · Expected Spring 2028</span>
+          </div>
+        </article>
+        <article>
+          <div class="resume-title">
+            <h3>Nassau Community College</h3>
+            <span>Graphic Design · Degree in progress</span>
+          </div>
         </article>
       </section>
     </div>
 
     <aside>
       <section class="side-section">
-        <h2>CREATIVE SKILLS</h2>
-        <p>Visual Design<br>Branding<br>Typography<br>Layout<br>Photography<br>Creative Direction</p>
+        <h2>DESIGN</h2>
+        <p>Interaction design / UX<br>Prototyping<br>User research and surveys<br>Visual design<br>Branding<br>Typography and layout<br>Photography and video</p>
       </section>
 
       <section class="side-section">
-        <h2>PROFESSIONAL SKILLS</h2>
-        <p>Client Communication<br>Project Management<br>Leadership<br>Problem Solving<br>Workflow Management<br>Team Collaboration</p>
+        <h2>PROFESSIONAL</h2>
+        <p>Team leadership<br>Operations management<br>Client and vendor relations<br>Project management<br>Print production</p>
       </section>
 
       <section class="side-section">
         <h2>SOFTWARE</h2>
-        <p>Figma<br>Adobe Photoshop<br>Adobe Illustrator<br>Adobe InDesign<br>Blender<br>Maya<br>HTML / CSS</p>
+        <p>Figma<br>Qualtrics<br>Photoshop, Illustrator, InDesign<br>Blender, Maya<br>HTML / CSS</p>
+      </section>
+
+      <section class="side-section">
+        <h2>LANGUAGES</h2>
+        <p>English<br>Spanish</p>
+      </section>
+
+      <section class="side-section">
+        <h2>CONTACT</h2>
+        <p>Long Island, NY<br><a class="resume-link" href="https://www.linkedin.com/in/offaxiscreative" target="_blank" rel="noopener noreferrer">LinkedIn</a><br><a class="resume-link" href="contact.html">Contact form</a></p>
       </section>
     </aside>
   </div>
 </section>
 </main>
 
+<div class="ht-band"><canvas aria-hidden="true" data-scene="station" data-anim="1" data-step="4" data-stop="Resume"></canvas></div>
 <footer>
-  <p>OFF/AXIS™ — KEVIN CORNEJO&copy;</p>
+  <p>OFF/AXIS — KEVIN CORNEJO © 2026</p>
   <p>OUTSIDE THE EXPECTED.</p>
-  <p>NEW YORK / 2026</p>
+  <p><a href="privacy.html">PRIVACY</a> / NEW YORK</p>
 </footer>
   <script src="js/background.js"></script>
   <script src="js/navigation.js"></script>
+  <script src="js/nyc.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/subway.js"></script>
+  <script src="js/eggs.js"></script>
 </body>
 </html>

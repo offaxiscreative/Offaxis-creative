@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MW4 Menu Redesign | OFF/AXIS</title>
+  <meta name="description" content="Fan-concept case study: redesigning Call of Duty: Modern Warfare 4's PC menus around two pain points, getting into a match and building a loadout. By Kevin Cornejo.">
+  <meta property="og:title" content="MW4 Menu Redesign | OFF/AXIS">
+  <meta property="og:description" content="One press to play. Build the gun in your hands. A fan-concept redesign by Kevin Cornejo.">
+  <meta property="og:image" content="images/mw4-1600.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/case.css">
+  <link rel="stylesheet" href="css/mw.css">
+</head>
+<body data-ht="rooftop,train,drones,crossing">
+<a class="skip-link" href="#main">SKIP TO CONTENT</a>
+<header>
+  <a class="logo" href="index.html" aria-label="OFF/AXIS home">OFF<span>/</span>AXIS</a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+  <nav id="site-nav" aria-label="Main">
+    <a href="index.html">HOME</a>
+    <a href="work.html" aria-current="page">WORK</a>
+    <a href="index.html#about">ABOUT</a>
+    <a href="resume.html">RESUME</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</header>
+<main id="main" class="case">
+<div class="case-wrap">
+  <a class="back-link" href="work.html"><svg class="icon icon-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="M20 12H5M11 6l-6 6 6 6"/></svg> ALL WORK</a>
+  <section class="case-hero" aria-labelledby="case-title">
+    <div>
+      <p class="label purple">CASE STUDY / FAN-CONCEPT REDESIGN</p>
+      <h1 id="case-title">MENU<br>ZERO.</h1>
+      <p class="tagline">Reimagining the multiplayer lobby.</p>
+      <p class="lede">An independent redesign of Call of Duty: Modern Warfare 4’s multiplayer lobby on PC, focused on three things players do every session: entering a match, choosing a mode and building a loadout.</p>
+      <a class="button" href="#pain">SEE THE PAIN POINTS <svg class="icon icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <dl class="facts">
+        <div><dt>TYPE</dt><dd>Independent redesign</dd></div>
+        <div><dt>PLATFORM</dt><dd>PC · 1920×1080</dd></div>
+        <div><dt>TOOLS</dt><dd>Figma</dd></div>
+      </dl>
+    </div>
+    <figure class="case-photo hero-photo"><div class="frame"><img fetchpriority="high" src="images/mw4-1600.webp" srcset="images/mw4-800.webp 800w, images/mw4-1600.webp 1600w" sizes="(max-width:900px) 90vw, 45vw" width="1600" height="1067" alt="The redesigned MW4 home screen on a desktop monitor: Team Deathmatch, Find Match and featured playlists"></div><figcaption>FIG. 01 — REDESIGNED HOME</figcaption></figure>
+  </section>
+
+  <section class="case-section reveal" aria-labelledby="s1">
+    <p class="label purple">001 / OVERVIEW</p>
+    <h2 id="s1">Three player journeys, redesigned.</h2>
+    <p class="lede">Rather than redesign the whole game interface, I focused on the three journeys players repeat most. Everything is designed in MW4’s existing visual language, so the focus stays on the interaction.</p>
+    <div class="cards">
+      <article class="card"><span class="label">JOURNEY 01</span><h3>Entering a match</h3><p>Reduce unnecessary navigation, make one action clearly primary and keep match preparation connected to getting into the game.</p></article>
+      <article class="card alt"><span class="label">JOURNEY 02</span><h3>Browsing game modes</h3><p>Make modes easier to find and compare, with a clearer hierarchy and better information about what each playlist is.</p></article>
+      <article class="card dim"><span class="label">JOURNEY 03</span><h3>The loadout system</h3><p>Cut menu transitions, show equipment information more clearly and make customizing interactive without losing depth.</p></article>
+    </div>
+    <div class="mw-statements">
+    <div class="hmw"><p class="label purple">PROBLEM</p><p class="mw-problem">The current lobby adds friction to tasks players repeat every session: finding the right mode, adjusting a loadout and getting into a match. That friction cuts into the player’s sense of control and keeps them in menus instead of the game.</p></div>
+    <div class="hmw"><p class="label purple">HOW MIGHT WE</p><p>Make finding a mode, building a loadout and entering a match faster and more interactive, without losing the feel of the game?</p></div>
+    </div>
+  </section>
+
+  <section class="case-section reveal" id="pain" aria-labelledby="s2">
+    <p class="label purple">002 / SECONDARY RESEARCH</p>
+    <h2 id="s2">Three pain points from player feedback.</h2>
+    <p class="lede">Modern Warfare 4 community threads, official patch notes and published coverage of the menus.</p>
+    <div class="cards mw-points">
+      <article class="card"><span class="label">PAIN POINT 01</span><h3>Disrupted match preparation</h3>
+        <blockquote>“Getting kicked out of the create a class menu to watch a short scene then not being able to actually choose until after the match begins because it’s locked.”</blockquote>
+        <p class="mw-src">PLAYER ON <a href="https://www.reddit.com/r/modernwarfare4/comments/1xfd4c2/fix_load_outs_asap/" target="_blank" rel="noopener noreferrer">R/MODERNWARFARE4</a> · OCT 25, 2026</p>
+        <p><b>Concerns:</b> interrupted flow, limited player agency, unpredictable behavior.</p>
+        <p><b>Opportunity:</b> connect match preparation and entering the game into one continuous step.</p></article>
+      <article class="card alt"><span class="label">PAIN POINT 02</span><h3>Finding and choosing modes</h3>
+        <blockquote>Players may not realize Popular Modes playlists use persistent lobbies. IGN called the lack of clear labeling “a little baffling.”</blockquote>
+        <p class="mw-src"><a href="https://www.reddit.com/r/modernwarfare4/comments/1xrabde/what_has_been_your_experience_of_the_popular/" target="_blank" rel="noopener noreferrer">R/MODERNWARFARE4</a> · NOV 8, 2026 · IGN VIA <a href="https://www.gamerfuzion.com/modern-warfare-4-no-open-matchmaking-at-launch-sbmm-infinity-ward-joe-cecot/" target="_blank" rel="noopener noreferrer">GAMERFUZION</a></p>
+        <p>Season 1 also added a Select/Deselect All option to Edit Quickplay Modes (<a href="https://www.callofduty.com/patchnotes/2026/11/call-of-duty-modern-warfare-4-season-1-patch-notes" target="_blank" rel="noopener noreferrer">official patch notes</a>), a sign that mode selection cost extra effort.</p>
+        <p><b>Concerns:</b> low discoverability, weak hierarchy, playlist traits not communicated.</p>
+        <p><b>Opportunity:</b> help players understand a mode before they pick it.</p></article>
+      <article class="card dim"><span class="label">PAIN POINT 03</span><h3>Slow loadout interactions</h3>
+        <blockquote>“Can we just have fast, reactive menus like we had for years?”</blockquote>
+        <p class="mw-src">PLAYER ON <a href="https://www.reddit.com/r/modernwarfare4/comments/1w3mkxe/menus_are_atrocious_on_mkb/" target="_blank" rel="noopener noreferrer">R/MODERNWARFARE4</a> · AUG 31, 2026</p>
+        <p><b>Concerns:</b> animations that get in the way of selections, slow response, extra steps.</p>
+        <p><b>Opportunity:</b> make the loadout interactive in a way that supports customizing instead of slowing it down.</p></article>
+    </div>
+    <p class="label purple mw-sub">THE SAME PATTERN IN EARLIER RELEASES</p>
+    <div class="mw-evidence">
+      <figure><blockquote>“A game inside a launcher inside a launcher.”</blockquote><figcaption>PC PLAYER ON COD HQ · <a href="https://www.gfinityesports.com/article/modern-warfare-3-bad-cod-hq-ui">GFINITY</a> · PAIN POINT 01</figcaption></figure>
+      <figure><blockquote>Players nicknamed the tile-based hub the “Hulu menu.”</blockquote><figcaption>PLAYER FEEDBACK · <a href="https://sportskeeda.com/call-of-duty-game/the-hulu-menu-horrible-black-ops-6-players-want-responsive-menu-launch">SPORTSKEEDA</a> · PAIN POINT 02</figcaption></figure>
+      <figure><blockquote>Picking a mode or a loadout became “disorganized and tedious.”</blockquote><figcaption>ON THE HORIZONTAL MENUS · <a href="https://gamerant.com/call-duty-modern-warfare-2-ui-bad-fix-needed/">GAME RANT</a> · PAIN POINTS 02 + 03</figcaption></figure>
+      <figure><blockquote>“All I really want from BO6 is a fast and snappy menu.”</blockquote><figcaption>PLAYER ON REDDIT · <a href="https://dotesports.com/call-of-duty/news/frustrated-cod-players-have-one-important-request-atop-black-ops-6-wishlist">DOT ESPORTS</a> · PAIN POINT 03</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="case-section reveal" aria-labelledby="s3">
+    <p class="label purple">003 / THE ORIGINAL EXPERIENCE</p>
+    <h2 id="s3">Everything competes for attention.</h2>
+    <p class="lede">The live lobby, Gunsmith and Create a Class, annotated. Screenshots © Activision.</p>
+    <div class="mw-before">
+      <div><figure class="case-photo"><div class="frame"><img src="images/mw4/before-lobby-1600.webp" srcset="images/mw4/before-lobby-800.webp 800w, images/mw4/before-lobby-1600.webp 1600w" sizes="(max-width:900px) 90vw, 580px" width="1600" height="900" loading="lazy" alt="Current MW4 multiplayer lobby with challenge panels, reward meters, a map vote and a lobby list on one screen"></div><figcaption>BEFORE · LOBBY · © ACTIVISION</figcaption></figure>
+        <ol class="mw-ann"><li><b>1</b>Challenges and rewards fill the left third.</li><li><b>2</b>The mode you’re playing is a small corner label.</li><li><b>3</b>Map vote is squeezed between progress bars.</li></ol></div>
+      <div><figure class="case-photo"><div class="frame"><img src="images/mw4/before-gunsmith-1600.webp" srcset="images/mw4/before-gunsmith-800.webp 800w, images/mw4/before-gunsmith-1600.webp 1600w" sizes="(max-width:900px) 90vw, 580px" width="1600" height="900" loading="lazy" alt="Current MW4 Gunsmith with attachment tiles down the left and a stats panel on the right"></div><figcaption>BEFORE · GUNSMITH · © ACTIVISION</figcaption></figure>
+        <ol class="mw-ann"><li><b>1</b>Attachments sit in a list apart from the gun.</li><li><b>2</b>The weapon floats on a backdrop, not in your hands.</li><li><b>3</b>Stats show values, not what changed.</li></ol></div>
+    </div>
+    <figure class="case-photo"><div class="frame"><img src="images/mw4/before-cac-1600.webp" srcset="images/mw4/before-cac-800.webp 800w, images/mw4/before-cac-1600.webp 1600w" sizes="(max-width:1240px) 90vw, 1180px" width="1600" height="900" loading="lazy" alt="Current Create a Class screen with a list of classes beside stacked slot cards"></div><figcaption>BEFORE · CREATE A CLASS · © ACTIVISION</figcaption></figure>
+  </section>
+
+  <section class="case-section reveal" aria-labelledby="s4">
+    <p class="label purple">004 / JOURNEY 01 — ENTERING A MATCH</p>
+    <h2 id="s4">Your last mode, one button.</h2>
+    <p class="lede">Home opens on the mode you last played. The mode name is the largest thing on screen, with its format underneath (“6v6 · Core · 12 maps in rotation”), and Find Match is the only filled button. Space starts matchmaking from anywhere on the screen.</p>
+    <figure class="case-photo"><div class="frame"><img src="images/mw4/home-1600.webp" srcset="images/mw4/home-800.webp 800w, images/mw4/home-1600.webp 1600w" sizes="(max-width:1240px) 90vw, 1180px" width="1600" height="900" loading="lazy" alt="Redesigned home: Team Deathmatch, Find Match, a one-line loadout, three featured playlists, the party list and a store pill"></div><figcaption>FIG. 02 — HOME. KEY ART, MW4 LOGO AND PLAYLIST NAMES © ACTIVISION</figcaption></figure>
+    <div class="cards">
+      <article class="card"><span class="label">HIERARCHY</span><h3>One primary action</h3><p>In the live lobby, the mode is a small corner label. Here it leads the screen, and everything else steps back so Find Match is the obvious next move.</p></article>
+      <article class="card alt"><span class="label">PAIN POINT 01</span><h3>Loadout before you queue</h3><p>The active class sits on one line under Find Match, and C opens it from Home or Ready Up. The intent is to settle your loadout before the match starts, not after.</p></article>
+      <article class="card dim"><span class="label">FEEDBACK</span><h3>Party status in view</h3><p>Each party member shows a Ready state at the top right, so you can see whether everyone is set before you search.</p></article>
+    </div>
+  </section>
+
+  <section class="case-section reveal" aria-labelledby="s5">
+    <p class="label purple">005 / JOURNEY 02 — BROWSING GAME MODES</p>
+    <h2 id="s5">Modes that explain themselves.</h2>
+    <p class="lede">Featured playlists on Home each carry a type tag (New, 24/7 or HC) and a one-line description of what you’re getting, like “6v6 · One map, nonstop.” Ready Up lists your pinned playlists in order, with Browse All Playlists underneath and Q / E to switch between Multiplayer, DMZ and Campaign.</p>
+    <figure class="case-photo"><div class="frame"><img src="images/mw4/ready-up-1600.webp" srcset="images/mw4/ready-up-800.webp 800w, images/mw4/ready-up-1600.webp 1600w" sizes="(max-width:1240px) 90vw, 1180px" width="1600" height="900" loading="lazy" alt="Ready Up screen with a left nav rail, pinned playlists, mode detail with Find Match, loadout card and party"></div><figcaption>FIG. 03 — READY UP: PINNED PLAYLISTS, MODE DETAIL AND LOADOUT. FIND MATCH OR SPACE ANIMATES HERE FROM HOME. KEY ART © ACTIVISION</figcaption></figure>
+    <div class="cards">
+      <article class="card"><span class="label">PAIN POINT 02</span><h3>The type before the click</h3><p>The tag and description tell you what a playlist is before you choose it, instead of after you load in.</p></article>
+      <article class="card alt"><span class="label">HIERARCHY</span><h3>Pinned, not buried</h3><p>The modes you play most stay in a short numbered list. Everything else is one step away in Browse All.</p></article>
+      <article class="card dim"><span class="label">EFFICIENCY</span><h3>Switch with one key</h3><p>Q and E move between Multiplayer, DMZ and Campaign without leaving the screen.</p></article>
+    </div>
+  </section>
+
+  <section class="case-section reveal" aria-labelledby="s6">
+    <p class="label purple">006 / JOURNEY 03 — THE LOADOUT SYSTEM</p>
+    <h2 id="s6">Build the gun in your hands.</h2>
+    <p class="lede">Create a Class keeps every slot on one screen: operator, weapons, equipment, perks and killstreaks, with the selected weapon’s stats and attachments beside them. Opening the Gunsmith drops you into first person at the firing range, with a hotspot on each part of the gun. Choosing an attachment or camo animates onto the weapon.</p>
+    <figure class="case-photo"><div class="frame"><img src="images/mw4/create-class-1600.webp" srcset="images/mw4/create-class-800.webp 800w, images/mw4/create-class-1600.webp 1600w" sizes="(max-width:1240px) 90vw, 1180px" width="1600" height="900" loading="lazy" alt="Redesigned Create a Class with class list, slot cards with vector weapon and equipment art, and a weapon detail panel"></div><figcaption>FIG. 04 — CREATE A CLASS. WEAPON, EQUIPMENT, PERK AND KILLSTREAK ART DRAWN FOR THIS PROJECT. KEY ART © ACTIVISION</figcaption></figure>
+    <div class="mw-player" data-player><div class="mw-stage"><figure class="mw-frame is-on"><img src="images/mw4/stock-1600.webp" srcset="images/mw4/stock-800.webp 800w, images/mw4/stock-1600.webp 1600w" sizes="(max-width:1240px) 90vw, 1180px" width="1600" height="900" loading="lazy" alt="Stock M4 in first person with dashed hotspots on empty slots"></figure><figure class="mw-frame"><img src="images/mw4/equipping-1600.webp" srcset="images/mw4/equipping-800.webp 800w, images/mw4/equipping-1600.webp 1600w" sizes="(max-width:1240px) 90vw, 1180px" width="1600" height="900" loading="lazy" alt="Camera pushed in on the rail with a progress ring and Equipping Reflex label"></figure><figure class="mw-frame"><img src="images/mw4/built-1600.webp" srcset="images/mw4/built-800.webp 800w, images/mw4/built-1600.webp 1600w" sizes="(max-width:1240px) 90vw, 1180px" width="1600" height="900" loading="lazy" alt="Built M4 with each attachment labeled on the gun and a Build updated toast"></figure><figure class="mw-frame"><img src="images/mw4/base-1600.webp" srcset="images/mw4/base-800.webp 800w, images/mw4/base-1600.webp 1600w" sizes="(max-width:1240px) 90vw, 1180px" width="1600" height="900" loading="lazy" alt="Appearance tab with base camo in hand and Gold ready to apply"></figure><figure class="mw-frame"><img src="images/mw4/gold-1600.webp" srcset="images/mw4/gold-800.webp 800w, images/mw4/gold-1600.webp 1600w" sizes="(max-width:1240px) 90vw, 1180px" width="1600" height="900" loading="lazy" alt="Gold camo applied to the M4, mastery panel showing next: Platinum"></figure></div><div class="mw-caption" aria-live="polite"><span class="n">01 / 05</span><b>STOCK</b><span class="d">Empty slots show a + on the gun.</span></div><div class="mw-controls"><button class="mw-play" type="button" aria-pressed="true" aria-label="Pause animation"><span class="ic-pause" aria-hidden="true"></span><span class="ic-play" aria-hidden="true"></span></button><div class="mw-dots" role="group" aria-label="Loadout steps"><button type="button" class="mw-dot is-on" data-i="0" data-t="STOCK" data-d="Empty slots show a + on the gun." aria-label="Step 1 of 5: Stock" aria-current="step"><i class="bar" aria-hidden="true"></i></button><button type="button" class="mw-dot" data-i="1" data-t="EQUIPPING" data-d="The camera pushes in on the rail as the part goes on." aria-label="Step 2 of 5: Equipping"><i class="bar" aria-hidden="true"></i></button><button type="button" class="mw-dot" data-i="2" data-t="BUILT" data-d="Every part labeled where it sits." aria-label="Step 3 of 5: Built"><i class="bar" aria-hidden="true"></i></button><button type="button" class="mw-dot" data-i="3" data-t="BASE CAMO" data-d="Base in your hands, Gold ready." aria-label="Step 4 of 5: Base Camo"><i class="bar" aria-hidden="true"></i></button><button type="button" class="mw-dot" data-i="4" data-t="GOLD APPLIED" data-d="Gold paints up the gun in your hands." aria-label="Step 5 of 5: Gold Applied"><i class="bar" aria-hidden="true"></i></button></div></div><p class="mw-credit">Gameplay captures © Activision. Overlays, labels and layout are my design.</p></div>
+    <div class="cards">
+      <article class="card"><span class="label">COMPARE</span><h3>Change, not just value</h3><p>Each stat bar shows the gain or cost against your current part, so you can judge a swap before you make it.</p></article>
+      <article class="card alt"><span class="label">FEWER TRANSITIONS</span><h3>One shared layout</h3><p>Every state uses the same layout, so only the gun and its labels move. You never lose your place between screens.</p></article>
+      <article class="card dim"><span class="label">PROGRESS</span><h3>Next camo in view</h3><p>The next mastery tier and its requirement sit beside the camos.</p></article>
+    </div>
+  </section>
+
+  <section class="case-section reveal" aria-labelledby="s7">
+    <p class="label purple">007 / INTERACTIVITY AND RATIONALE</p>
+    <h2 id="s7">Interactive, but not in the way.</h2>
+    <p class="lede">Pain Point 03 is about motion that slows players down, and this redesign adds motion. The rule I designed around: interactivity has to support the task. Common actions stay one key away, and animation happens on the gun, not between menus.</p>
+    <div class="mw-pillars">
+      <div><b>Usability</b><span>Remove complexity players don’t need.</span></div>
+      <div><b>Efficiency</b><span>Space to find a match, C for the loadout, Q / E to switch modes.</span></div>
+      <div><b>Interactivity</b><span>Build the loadout on the weapon itself, not in a list.</span></div>
+      <div><b>Immersion</b><span>The firing range and first-person view make the menu part of the game.</span></div>
+      <div><b>Player agency</b><span>Your mode, class and changes stay visible and in your control.</span></div>
+    </div>
+  </section>
+
+  <section class="case-section reveal" aria-labelledby="s8">
+    <p class="label purple">008 / REFLECTION</p>
+    <h2 id="s8">What I’d test next.</h2>
+    <div class="cards">
+      <article class="card"><span class="label">JOURNEY 01</span><h3>Time to match</h3><p>Time players from launch to matchmaking on the live lobby and on the prototype, and count how often they leave to fix a loadout.</p></article>
+      <article class="card alt"><span class="label">JOURNEY 02</span><h3>Picking the right mode</h3><p>Ask players to find a specific kind of match, then check whether they understood what the playlist was before they joined.</p></article>
+      <article class="card dim"><span class="label">JOURNEY 03</span><h3>Does motion help?</h3><p>Compare edit time and mistakes between building in hand and a standard list, especially for experienced players who want speed.</p></article>
+    </div>
+    <div class="mw-credits">
+      <p class="label purple">CREDITS</p>
+      <p><b>Activision / Infinity Ward:</b> Call of Duty and Modern Warfare names, MW4 logo, key art, gameplay and firing-range captures, camo textures, current-menu screenshots, playlist and killstreak names. This is an independent, unsolicited fan concept, not affiliated with or endorsed by Activision or its studios.</p>
+      <p><b>My work:</b> the redesigned layouts and flows, the component kit, icons, prestige and player emblems, and the vector weapon, equipment, perk and killstreak art.</p>
+    </div>
+    <nav class="case-nav" aria-label="Case studies">
+      <a class="case-nextlink" href="bubble-keyboard.html"><small>NEXT STOP · 01 / 04</small><b>Bubble Keyboard</b><i>OFF/AXIS LINE · CASE STUDIES</i><svg class="icon icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <ol class="case-line"><li><a href="bubble-keyboard.html" class="stop"><span class="stop-dot" aria-hidden="true"></span><span class="stop-name">Bubble Keyboard</span><em>Next</em></a></li><li><a href="campusconnect.html" class="stop"><span class="stop-dot" aria-hidden="true"></span><span class="stop-name">Campus<wbr>Connect</span></a></li><li><a href="lifeline.html" class="stop"><span class="stop-dot" aria-hidden="true"></span><span class="stop-name">Lifeline</span></a></li><li><a href="mw4-menu.html" class="stop on" aria-current="page"><span class="stop-dot" aria-hidden="true"></span><span class="stop-name">MW4 Menu</span><em>You are here</em></a></li></ol>
+    </nav>
+  </section>
+</div>
+</main>
+
+<div class="ht-band"><canvas aria-hidden="true" data-scene="station" data-anim="1" data-step="4" data-stop="MW4"></canvas></div>
+<footer>
+  <p>OFF/AXIS — KEVIN CORNEJO © 2026</p>
+  <p>OUTSIDE THE EXPECTED.</p>
+  <p><a href="privacy.html">PRIVACY</a> / NEW YORK</p>
+</footer>
+  <script src="js/background.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/nyc.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/subway.js"></script>
+  <script src="js/eggs.js"></script>
+  <script src="js/case.js"></script>
+  <script src="js/mw.js"></script>
+</body>
+</html>
